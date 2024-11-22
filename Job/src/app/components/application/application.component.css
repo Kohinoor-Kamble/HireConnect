@@ -1,0 +1,68 @@
+
+  .application-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.application-form h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.application-form input[type="text"]:focus,
+.application-form input[type="email"]:focus,
+.application-form textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 157, 143, 0.2);
+}
+
+.application-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.application-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.application-form button[type="submit"]:hover {
+    background-color:  #0056b3;
+}
+
+.application-form button[type="submit"]:active {
+    background-color: #1e786e;
+}
+
+.application-form button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 4px #21867a;
+}

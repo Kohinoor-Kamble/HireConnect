@@ -1,0 +1,12 @@
+<!-- <p>login works!</p> -->
+<form [formGroup]="data" (ngSubmit)="registeredUser()">
+    <h2 style="text-align: center; color: #007bff;">Login</h2>
+    <label>Username</label>
+    <input type="text" id="username" placeholder="enter your username" formControlName="username">
+    <label>Password</label>
+    <input type="password" id="password" placeholder="enter your password" formControlName="password">
+
+    <button type="submit">login</button>
+    <button type="submit" [routerLink]="['/register']">Register</button>
+
+</form>

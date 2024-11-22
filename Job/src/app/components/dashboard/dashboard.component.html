@@ -1,0 +1,38 @@
+<!-- <p>dashboard works!</p> -->
+
+<nav>
+    <!-- <a routerLink="/profile">Profile</a> -->
+    <a routerLink="/jobs">Job Listings</a>
+    <a routerLink="/post-job">Post Job</a>
+    <a routerLink="/login">Logout</a>
+  </nav>
+ 
+  <router-outlet></router-outlet>
+  <!-- <app-job-list></app-job-list> -->
+  <!-- <app-job-posting></app-job-posting> -->
+  
+<div *ngFor="let job of jobs" class="job-card">
+
+  <div class="job-cards-container">
+    <div *ngFor="let job of jobs" class="job-card">
+
+      <h2 class="job-title">{{ job.title }}</h2>
+      <p class="job-location"><i class="fas fa-map-marker-alt"></i> {{ job.location.display_name }}</p>
+      <p class="job-description">{{ job.description | slice:0:100 }}...</p>
+      <p class="job-company">Company: {{ job.company.display_name }}</p>
+      <p class="job-salary">Salary: {{ job.salary_min | currency:"INR" }} - {{ job.salary_max | currency:"INR" }}</p>
+      <div class="job-footer">
+        <!-- <a [routerLink]="['/job', job.id]" class="details-button" >View Details</a> -->
+        <a [href]="job.redirect_url" target="_blank" class="apply-button details-button">
+          Apply Now
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+  

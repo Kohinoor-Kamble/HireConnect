@@ -1,0 +1,22 @@
+
+<div class="user-registration">
+    
+    <form  (ngSubmit)="registeredUser()"class="form" [formGroup]=" registrationGroup">
+        <h2>Register</h2>
+        <label>Username</label>
+        <input type="text"  [(ngModel)]="Authenticate.username" name="username" placeholder="Enter name" required [formControl]="username">
+        <h4 [hidden]="username.valid || username.untouched">Enter the Correct name</h4>
+        <label>Password</label>
+        <input type="password"  [(ngModel)]="Authenticate.password"  name="password" placeholder="Enter password"   required [formControl]="password">
+        <!-- <h4 [hidden]="password.valid || password.untouched">Enter the Correct Password</h4> -->
+        <label>Role</label>
+        <select [(ngModel)]="Authenticate.role" name="role" [formControl]="role">
+          <option value="JOB_SEEKER">Job Seeker</option>
+          <option value="EMPLOYER">Employer</option>
+        </select>
+        <button type="submit"> Register</button>
+        <!-- <a [routerLink]="['/jobs']"  class="button">Register</a> -->
+        <!-- <p>Already have an account? <a [routerLink]="['/login']">Login here</a></p> -->
+    </form>
+
+</div>

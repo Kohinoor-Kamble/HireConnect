@@ -1,0 +1,68 @@
+<!-- <p>job-list works!</p> -->
+<!-- <ul>
+    <li >
+        <h3>job:-</h3>
+        <p>Description:</p>
+    </li>
+    <li></li>
+</ul> -->
+
+
+
+<div class="job-list job-cards-container">
+  <!-- <h2>Job Listings</h2> -->
+  <div *ngFor="let jo of job" class="job-card">
+    <ul style="list-style-type: none;">
+      <li>
+        <h3>{{ jo.title }}</h3>
+        <p>{{ jo.description }}</p>
+        <!-- <a [routerLink]="['/job-details', id]">View Details</a> -->
+        <button [routerLink]="['/job', jo.id]" class="details-button">View Details</button> 
+        <button [routerLink]="['/application', jo.id]" class="details-button">Apply to job</button> 
+        </li>
+    </ul>
+  </div>
+</div>
+
+<!-- http://localhost:8080/api/applicants -->
+
+<!-- <div class="job-listings">
+    <h2>Available Jobs</h2>
+    <div *ngIf="jobs.length === 0">No jobs available.</div>
+    <div *ngFor="let job of jobs">
+      <div class="job">
+        <h3>{{ job.title }}</h3>
+        <p>{{ job.company }}</p>
+        <a [href]="job.applyUrl" target="_blank">Apply Now</a>
+      </div>
+    </div>
+  </div> -->
+
+
+
+<!-- <div *ngFor="let job of jobs" class="job-card">
+
+  <div class="job-cards-container">
+    <h2>Job Listings</h2>
+    <div *ngFor="let jo of job" class="job-card">
+   
+      <ul>
+        <li>
+          <h3>{{ jo.title }}</h3>
+          <p>{{ jo.description }}</p>
+          <!-- <a [routerLink]="['/job-details', id]">View Details</a> -->
+<!-- <button [routerLink]="['/job-details', jo.id]">View Details</button>
+          <button [routerLink]="['/application', jo.id]">Apply to job</button>
+        </li>
+      </ul>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+</div> --> -->

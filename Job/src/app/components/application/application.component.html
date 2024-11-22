@@ -1,0 +1,12 @@
+<!-- <p>application works!</p> -->
+<div class="application-form">
+    <h2>Apply for Job</h2>
+    <form (ngSubmit)="submitApplication()" [formGroup]="applicationForm">
+      <input type="text" [(ngModel)]="application.applicationName" name="name" placeholder="Your Name" required [formControl]="applicationName" />
+      <input type="email" [(ngModel)]="application.applicationEmail" name="email" placeholder="Your Email" required [formControl]="applicationEmail"/>
+      <label>Resume</label><br><br>
+      <input type="file" [(ngModel)]="application.resume" name="resume" placeholder="Your Resume" required [formControl]="resume"/><br><br>
+      <button type="submit" (click)="logOut()">Submit Application</button>
+    </form>
+  </div>
+  

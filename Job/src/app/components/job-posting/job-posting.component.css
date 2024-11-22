@@ -1,0 +1,85 @@
+
+
+
+  .job-posting {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.job-posting h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-posting h4 {
+    text-align: center;
+    color: #28a745;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.job-posting label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.job-posting input[type="text"],
+.job-posting textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.job-posting input[type="text"]:focus,
+.job-posting textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 157, 143, 0.2);
+}
+
+.job-posting textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.job-posting button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.job-posting button[type="submit"]:hover {
+    background-color:#0056b3 ;
+}
+
+.job-posting button[type="submit"]:active {
+    background-color: #1e786e;
+}
+
+.job-posting button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 4px #21867a;
+}
+
+  

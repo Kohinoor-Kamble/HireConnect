@@ -1,0 +1,105 @@
+/* Body Styling to Center Content */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for Registration Form */
+.user-registration {
+  width: 400px;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Form Title */
+.user-registration h2 {
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Field Styling */
+.user-registration input[type="text"],
+.user-registration input[type="password"],
+.user-registration select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Input Focus Styling */
+.user-registration input:focus,
+.user-registration select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Validation Message */
+.user-registration h4 {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Button Styling */
+.user-registration button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.user-registration button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Label Styling */
+.user-registration label {
+  display: block;
+  font-size: 1rem;
+  color: #333333;
+  text-align: left;
+  margin: 0.5rem 0 0.25rem;
+}
+
+/* Link Styling */
+.user-registration p {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-top: 1.5rem;
+}
+
+.user-registration p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.user-registration p a:hover {
+  text-decoration: underline;
+}
